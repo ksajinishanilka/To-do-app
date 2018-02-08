@@ -1,0 +1,41 @@
+<html>
+        <head>
+            <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        </head>
+        <body>
+            <div class="heading">
+                <h1>To Do List</h1>
+            </div>
+            <div class="container">
+                    <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th>Task</th>
+                                <th>Date</th>
+                                <th>Description</th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>john@example.com</td>
+                                <td>
+                                        <input type="button" value="Edit" class="edit" onclick="edit_row()">
+                                        <input type="button" value="Delete" class="delete" onclick="delete_row()">
+                                </td>
+                              </tr>
+                              
+                            </tbody>
+                          </table>
+            </div>
+        </body>
+        </html>
