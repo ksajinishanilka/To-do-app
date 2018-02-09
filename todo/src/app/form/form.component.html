@@ -1,8 +1,28 @@
-Task: <input #task type="text" />
-Date: <input type="text" />
-Description: <textarea type="text" ></textarea>
+<!--Task: <input [(ngModel)]="task" type="text" />-->
+<!--Date: <input [(ngModel)]="date" type="text" />-->
+<!--Description: <textarea [(ngModel)]="description" type="text" ></textarea>-->
 
+
+<table>
+  <tr>
+    <th>Task</th>
+    <th>Date</th>
+    <th>Description</th>
+  </tr>
+  <tr *ngFor="let field of fieldArray; let i = index">
+    <td>
+      <input [(ngModel)]="field.task" class="form-control" type="text" name="{{field.task}}" />
+    </td>
+    <td>
+      <input [(ngModel)]="field.date" class="form-control" type="text" name="{{field.date}}" />
+    </td>
+    <td>
+      <input [(ngModel)]="field.description" class="form-control" type="text" name="{{field.description}}" />
+    </td>
+  </tr>
+</table>
 <br><br>
-<button (click)="onSubmit(task.value)">Submit</button>
+<button class="btn btn-default" type="button" (click)="addFieldValue()">Add Task</button>
+<button class="btn btn-default"  type="button" (click)="deleteFieldValue(i)">Delete Task</button>
 
 

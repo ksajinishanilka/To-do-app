@@ -1,11 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
 import { TableComponent } from './table/table.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 @NgModule({
@@ -13,10 +14,12 @@ import { TableComponent } from './table/table.component';
   declarations: [
     AppComponent,
     FormComponent,
-    TableComponent
+    TableComponent,
+    SidebarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
